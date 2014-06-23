@@ -12,6 +12,22 @@
 $(function() {
 $( "#tabs" ).tabs();
 });
+
+
+
+
+for (#tabs-1) {
+$.ajax(
+    type:'GET',
+    url:"http://content.guardianapis.com/football?date-id=date%2Flast24hours",
+    data:"format=json&id=123",
+    success:function(feed) {
+        document.write(feed);
+    },
+    dataType:'json'
+);
+}
+
 </script>
 
 </head>
