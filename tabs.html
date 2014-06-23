@@ -5,6 +5,8 @@
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="C:\Users\Piri\Documents\Github\guardian-project\ajax.js"></script>
 <link rel="stylesheet" href="http://code.jquery.com/resources/demos/style.css">
 <link rel="stylesheet" href="css.css">
 
@@ -17,23 +19,12 @@ $( "#tabs" ).tabs();
 
 
 
-$.ajax(
-    type:'GET',
-    url:"http://content.guardianapis.com/football?date-id=date%2Flast24hours",
-    data:"format=json&id=123",
-    success:function(feed) {
-        document.write(feed);
-
-        for (item in data['results']) {
-        	$('#tabs-1').append(
-        		'<li>' + data['results'][item]['text'] + '</li>';
-
-        		)
-        }
-    },
-    dataType:'json'
-);
-}
+$.ajax({
+    url: "http://api.openweathermap.org/data/2.5/weather?q=london",
+    success: function( data ) {
+        $( "#weather" ).html( data.name + " is enjoying " + data.weather[0].description);
+    }
+});
 
 </script>
 
