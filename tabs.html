@@ -16,13 +16,20 @@ $( "#tabs" ).tabs();
 
 
 
-for (#tabs-1) {
+
 $.ajax(
     type:'GET',
     url:"http://content.guardianapis.com/football?date-id=date%2Flast24hours",
     data:"format=json&id=123",
     success:function(feed) {
         document.write(feed);
+
+        for (item in data['results']) {
+        	$('#tabs-1').append(
+        		'<li>' + data['results'][item]['text'] + '</li>';
+
+        		)
+        }
     },
     dataType:'json'
 );
