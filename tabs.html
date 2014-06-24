@@ -19,13 +19,6 @@ $( "#tabs" ).tabs();
 
 
 
-$.ajax({
-    url: "http://api.openweathermap.org/data/2.5/weather?q=london",
-    success: function( data ) {
-        $( "#weather" ).html( data.name + " is enjoying " + data.weather[0].description);
-    }
-});
-
 </script>
 
 </head>
