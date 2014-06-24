@@ -8,7 +8,7 @@
 
       $.each(data.response.results, function () {
 
-        $( "#news" ).append("<li>" + this['webTitle']+ /*this[string.link('webUrl')]*/   "</li>");
+        $( "#news" ).append("<li>"  + '<a href="' + this['webUrl']  +'">' + this['webTitle'] + '</a>' + "</li>");
 		
 
       });
@@ -24,8 +24,7 @@
 
       $.each(data.response.results, function () {
 
-        $( "#football" ).append("<li>" + this['webTitle']+ /*this[string.link('webUrl')]*/   "</li>");
-		
+        $( "#football" ).append("<li>"  + '<a href="' + this['webUrl']  +'">' + this['webTitle'] + '</a>' + "</li>")
 
       });
 
@@ -40,8 +39,7 @@
 
       $.each(data.response.results, function () {
 
-        $( "#travel" ).append("<li>" + this['webTitle']+ /*this[string.link('webUrl')]*/   "</li>");
-		
+        $( "#travel" ).append("<li>"  + '<a href="' + this['webUrl']  +'">' + this['webTitle'] + '</a>' + "</li>")
 
       });
 
