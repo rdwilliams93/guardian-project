@@ -45,6 +45,6 @@
 
     }});
 	
-	$(document).ready(function() {
-    $('divtohide').hide();
-    });
+	$(document).ready(function(){
+			$("p").hide();
+			});
