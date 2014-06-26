@@ -19,3 +19,6 @@ a:hover {
     color: #0000FF;
     text-decoration: underline;
 }
+element.style.ui-widget-header {
+border: 1px solid #aaaaaa;
+}
