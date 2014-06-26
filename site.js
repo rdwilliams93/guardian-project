@@ -1,6 +1,6 @@
- $.ajax({
+  $.ajax({
 
-    url: "http://content.guardianapis.com/news?show-fields=trailText",
+    url: "http://content.guardianapis.com/uk-news?show-fields=trailText",
 
     dataType: "jsonp",
 
@@ -8,14 +8,11 @@
 
       $.each(data.response.results, function () {
 
-        $( "#news" ).append("<h4>"  + '<a href="' + this['webUrl']  +'">' + this['webTitle'] + '</a>' + "</h4>");
-        $("#news").append("<li>" + this['fields'].trailText + "</li>");
-      });
-    /*$( "#news" ).append("<li>"  + field {this['trailText'] + "</li>");
-      });*/
-
+        $( "#uk-news" ).append("<li>"  + '<a href="' + this['webUrl']  +'">' + this['webTitle'] + '</a>' + "<br>" +'<p style="text-align:left">' + this['fields'].trailText  + "</li>"+ '<hr>');
+		  });
     }});
-   $.ajax({
+	 
+	 $.ajax({
 
     url: "http://content.guardianapis.com/football?show-fields=trailText",
 
@@ -25,12 +22,12 @@
 
       $.each(data.response.results, function () {
 
-        $( "#football" ).append("<h4>"  + '<a href="' + this['webUrl']  +'">' + this['webTitle'] + '</a>' + "</h4>");
-        $("#football").append("<li>" + this['fields'].trailText + "</li>");
+        $( "#football" ).append("<li>"  + '<a href="' + this['webUrl']  +'">' + this['webTitle'] + '</a>' + "<br>" +'<p style="text-align:left">' + this['fields'].trailText + "</li>" + "<hr>")
+
       });
 
     }});
-   $.ajax({
+	 $.ajax({
 
     url: "http://content.guardianapis.com/travel?show-fields=trailText",
 
@@ -40,12 +37,12 @@
 
       $.each(data.response.results, function () {
 
-        $( "#travel" ).append("<h4>"  + '<a href="' + this['webUrl']  +'">' + this['webTitle'] + '</a>' + "</h4>");
-        $("#travel").append("<li>" + this['fields'].trailText + "</li>");
+        $( "#travel" ).append("<li>"  + '<a href="' + this['webUrl']  +'">' + this['webTitle'] + '</a>' + "<br>" + '<p style="text-align:left">' + this['fields'].trailText + "</li>" + "<hr>")
+
       });
 
     }});
-
-  $(document).ready(function(){
-      $("p").hide();
-      });
+	
+	$(document).ready(function(){
+			$("p").hide();
+			});
