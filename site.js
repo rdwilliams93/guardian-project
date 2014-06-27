@@ -1,5 +1,5 @@
  $(document).ready(function() {
-    var list={"1":"uk-news","2":"football","3":"travel"};
+    var list={"1":"news","2":"football","3":"travel"};
     $.each(list, function(key, value) {
       $.ajax({
         url: "http://content.guardianapis.com/search?section=" + value + "&show-fields=trailText",
