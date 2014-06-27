@@ -5,7 +5,7 @@ h4 {
 }
 li {
     font-family: "Guardian Egyptian Text", Georgia, serif;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 ul {
@@ -37,17 +37,39 @@ a:hover {
 }
 .ui-widget-header {
 border: 1px solid #aaaaaa;
-background: #EDEDED;
+background: #FFFFFF;
 color: #EDEDED;
 font-weight: bold;
 }
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
-	border: 1px solid #d3d3d3;
+	border: 1px solid #575757;
 	background: #EDEDED url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
 	font-weight: normal;
 	color: #555555;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+	border: 1px solid #999999;
+	background: #FFFFFF url(images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+	float: left;
+	padding: .2em 1em;
+	text-decoration: none;
+}
+.ui-tabs .ui-tabs-panel {
+	display: block;
+	border-width: 0;
+	padding: 0em 1.0em;
+	background: none;
 }
 #newsy {
 	color:#D61D00
