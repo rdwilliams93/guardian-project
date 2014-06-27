@@ -3,6 +3,7 @@
 h4 {
     font-family: "Guardian Egyptian Headline", Georgia, serif;
 }
+
 li {
     font-family: "Guardian Egyptian Text", Georgia, serif;
     font-size: 15px;
@@ -15,6 +16,7 @@ ul {
 body {
         max-width:40em;
 }
+
 #hide {
         text-align:center
         }
@@ -31,17 +33,19 @@ a:hover {
     color: #0000FF;
     text-decoration: underline;
 }
+
 .ui-widget-header {
 border: 1px solid #aaaaaa;
 background: #FFFFFF;
 color: #EDEDED;
 font-weight: bold;
 }
+
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
         border: 1px solid #575757;
-        background: #EDEDED url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+        background: #EDEDED;
         font-weight: normal;
         color: #555555;
 }
@@ -54,7 +58,7 @@ font-weight: bold;
 .ui-widget-header .ui-state-focus {
 
         border: 1px solid #999999;
-        background: #FFFFFF url(images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x;
+        background: #FFFFFF;
         font-weight: normal;
         color: #FFFFFF;
 }

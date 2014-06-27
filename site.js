@@ -11,7 +11,7 @@
           $.each(data.response.results, function (i) {
             $( "#" + value ).append('<h4><a href="' + this['webUrl'] + '">' + this['webTitle'] + '</a></h4>');
             $( "#" + value ).append("<li>" + this['fields'].trailText + "</li>");
-             $( "#" + value ).append("<img src = " + this['fields'].thumbnail + ">");
+             $( "#" + value ).append("<img src ="  + this['fields'].thumbnail + ">");
             if ( i === 4 ) {
             return false;}
           });
@@ -22,9 +22,6 @@
     });
   });
 
-
-
-}
   $(function() {
     $( "#tabs" ).tabs();
     });
