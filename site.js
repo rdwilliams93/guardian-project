@@ -7,7 +7,7 @@
 
         success: function(data) {
           $.each(data.response.results, function (i) {
-            $( "#" + value ).append('<h4><a href="' + this['webUrl'] + '">' + this['webTitle'] + '</a></h4>');
+            $( "#" + value ).append('<h5><a href="' + this['webUrl'] + '">' + this['webTitle'] + '</a></h5>');
             $( "#" + value ).append("<li>" + this['fields'].trailText + "</li>");
             if ( i === 4 ) {
             return false;}
