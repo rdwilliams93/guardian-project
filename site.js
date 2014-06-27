@@ -1,4 +1,4 @@
-if(screen.width>600){
+if(screen.width>700){
 
 
 
