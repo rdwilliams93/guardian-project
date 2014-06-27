@@ -1,3 +1,21 @@
+<link rel="stylesheet" href="http://pasteup.guim.co.uk/0.0.5/css/fonts.pasteup.min.css">
+
+h4 {
+    font-family: "Guardian Egyptian Headline", Georgia, serif;
+}
+li {
+    font-family: "Guardian Egyptian Text", Georgia, serif;
+    font-size: 17px;
+}
+
+ul {
+	font-family: "Guardian Egyptian Text", Georgia, serif;
+}
+
+
+
+
+
 body {
 	max-width:40em;
 }
