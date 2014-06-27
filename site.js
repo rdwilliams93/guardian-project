@@ -7,8 +7,8 @@
 
         success: function(data) {
           $.each(data.response.results, function (i) {
-            $( "#" + value ).append('<li><a href="' + this['webUrl'] + '">' + this['webTitle'] + '</a></li>');
-            $( "#" + value ).append("<p>" + this['fields'].trailText + "</p>");
+            $( "#" + value ).append('<h4><a href="' + this['webUrl'] + '">' + this['webTitle'] + '</a></h4>');
+            $( "#" + value ).append("<li>" + this['fields'].trailText + "</li>");
             if ( i === 4 ) {
             return false;}
           });
