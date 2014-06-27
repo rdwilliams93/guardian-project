@@ -44,5 +44,8 @@
     }});
 	
 	$(document).ready(function(){
-			$("p").hide();
+			$("hide").hide();
 			});
+	$(function() {
+		$( "#tabs" ).tabs();
+	  });

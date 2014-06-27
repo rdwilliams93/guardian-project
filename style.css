@@ -1,11 +1,12 @@
 body {
 	max-width:40em;
 }
-
-
+#hide {
+	text-align:center
+	}
 
 a:link {
-	text-decoration: none;
+        text-decoration: none;
 }
 
 
@@ -25,3 +26,21 @@ background: #EDEDED;
 color: #EDEDED;
 font-weight: bold;
 }
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+        border: 1px solid #d3d3d3;
+        background: #FFFFFF url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+        font-weight: normal;
+        color: #555555;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+        float: left;
+        padding: 0.05em 1em;
+        text-decoration: none;
+}
+
+ul:first-child {
+	color: #D61D00
+	
+	}
