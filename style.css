@@ -1,3 +1,21 @@
+<link rel="stylesheet" href="http://pasteup.guim.co.uk/0.0.5/css/fonts.pasteup.min.css">
+
+h4 {
+    font-family: "Guardian Egyptian Headline", Georgia, serif;
+}
+li {
+    font-family: "Guardian Egyptian Text", Georgia, serif;
+    font-size: 17px;
+}
+
+ul {
+	font-family: "Guardian Egyptian Text", Georgia, serif;
+}
+
+
+
+
+
 body {
 	max-width:40em;
 }
@@ -9,12 +27,9 @@ a:link {
         text-decoration: none;
 }
 
-
-
 a:visited {
     color: #663366;
 }
-
 
 a:hover {
     color: #0000FF;
@@ -28,7 +43,7 @@ font-weight: bold;
 }
 .ui-state-default,
 .ui-widget-content .ui-state-default,
-.ui-widget-header .ui-state-default {
+
         border: 1px solid #d3d3d3;
         background: #FFFFFF url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
         font-weight: normal;
@@ -44,3 +59,10 @@ ul:first-child {
 	color: #D61D00
 	
 	}
+=======
+	border: 1px solid #d3d3d3;
+	background: #FFFFFF url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+	font-weight: normal;
+	color: #555555;
+}
+>

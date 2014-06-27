@@ -1,51 +1,22 @@
-  $.ajax({
+ $(document).ready(function() {
+    var list={"1":"uk-news","2":"football","3":"travel"};
+    $.each(list, function(key, value) {
+      $.ajax({
+        url: "http://content.guardianapis.com/search?section=" + value + "&show-fields=trailText",
+        dataType: "jsonp",
 
-    url: "http://content.guardianapis.com/uk-news?show-fields=trailText",
-
-    dataType: "jsonp",
-
-    success: function(data) {
-
-      $.each(data.response.results, function () {
-
-        $( "#uk-news" ).append("<li>" + '<p style="text-align:left">'   + '<a href="' + this['webUrl']  +'">' + this['webTitle'] + '</a>' + "<br>" +'<p style="text-align:left">' + this['fields'].trailText  + "</li>"+ '<hr>');
-		  });
-    }});
-	 
-	 $.ajax({
-
-    url: "http://content.guardianapis.com/football?show-fields=trailText",
-
-    dataType: "jsonp",
-
-    success: function(data) {
-
-      $.each(data.response.results, function () {
-
-        $( "#football" ).append("<li>"  + '<a href="' + this['webUrl']  +'">' + this['webTitle'] + '</a>' + "<br>" +'<p style="text-align:left">' + this['fields'].trailText + "</li>" + "<hr>")
-
-      });
-
-    }});
-	 $.ajax({
-
-    url: "http://content.guardianapis.com/travel?show-fields=trailText",
-
-    dataType: "jsonp",
-
-    success: function(data) {
-
-      $.each(data.response.results, function () {
-
-        $( "#travel" ).append("<li>"  + '<a href="' + this['webUrl']  +'">' + this['webTitle'] + '</a>' + "<br>" + '<p style="text-align:left">' + this['fields'].trailText + "</li>" + "<hr>")
-
-      });
-
-    }});
-	
-	$(document).ready(function(){
-			$("hide").hide();
-			});
+        success: function(data) {
+          $.each(data.response.results, function (i) {
+            $( "#" + value ).append('<h4><a href="' + this['webUrl'] + '">' + this['webTitle'] + '</a></h4>');
+            $( "#" + value ).append("<li>" + this['fields'].trailText + "</li>");
+            if ( i === 4 ) {
+            return false;}
+          });
+        }});
+    });
+  });
+			
 	$(function() {
 		$( "#tabs" ).tabs();
 	  });
+
