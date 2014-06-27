@@ -17,10 +17,14 @@ body {
         max-width:40em;
 }
 
+img {
+	float:left
+	}
+	
 #hide {
         text-align:center
         }
-
+	
 a:link {
         text-decoration: none;
 }
@@ -33,6 +37,10 @@ a:hover {
     color: #0000FF;
     text-decoration: underline;
 }
+
+p {
+	float:right
+	}
 
 .ui-widget-header {
 border: 1px solid #aaaaaa;
